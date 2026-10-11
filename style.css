@@ -1,0 +1,191 @@
+/* General Reset & Smooth Scrolling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #c9184a;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #c9184a;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), linear-gradient(135deg, #1d3557, #457b9d);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Container & Sections */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.content-section {
+    margin-bottom: 60px;
+}
+
+.content-section h2 {
+    font-size: 1.8rem;
+    color: #1d3557;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #c9184a;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Card Grid Layout */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* Individual Card Styling */
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid #c9184a;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Card Image Styling - Displays Full Uncropped Images */
+.card img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    background-color: #f8f9fa;
+}
+
+/* Side-by-Side Image Pair Styling */
+.image-pair {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.image-pair img {
+    width: 50%;
+    max-height: 180px;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-bottom: 0;
+    background-color: #f8f9fa;
+}
+
+/* Side-by-Side Profile Card Styling */
+.profile-card-side {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+    border-top: 4px solid #1d3557;
+}
+
+.profile-card-side img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #c9184a;
+    flex-shrink: 0;
+    margin-bottom: 0;
+    background-color: #f8f9fa;
+}
+
+.profile-info h3 {
+    font-size: 1.4rem;
+    color: #1d3557;
+    margin-bottom: 4px;
+}
+
+.profile-info .role {
+    font-weight: 600;
+    color: #c9184a;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: #1d3557;
+    font-size: 1.2rem;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #1d3557;
+    color: white;
+    margin-top: 60px;
+    font-size: 0.9rem;
+}
